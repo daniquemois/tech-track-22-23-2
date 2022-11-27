@@ -6,6 +6,14 @@
     --white: #ffffff;
     --black: #000000;
     --wiet: #64BF4E;
+    --alcohol: #FE9119;
+    --lachgas: #A61D80;
+    --amfetamine: #1291B1;
+    --xtc: #D728A0;
+    --tabak: #B99832;
+    --coke: #7952E6;
+    --ghb: #9373B1;
+    --keta: #C7D428;
 }
 html,
 body,
@@ -74,6 +82,9 @@ body,
 .blokteksten > section{
     aspect-ratio: 1 / 1;
 }
+.wietdata, .alcoholdata, .cokedata, .ketadata, .xtcdata, .ghbdata, .amfetaminedata, .tabakdata, .lachgasdata{
+    display: none;
+}
 .hide{
     display: none;
 }
@@ -81,9 +92,61 @@ body,
     display: block;
 }
 /* Kleurtjes drugs */
-.gebruikers #wietgebruikers{
+.blokken > section span{
+    color: var(--white);
+    font-style: italic;
+}
+.gebruikers #wietgebruikers, .wietdata span{
     color: var(--wiet);
 }
 .wietdata .blokken > section{
     background-color: var(--wiet);
+}
+.alcoholdata .blokken > section{
+    background-color: var(--alcohol)
+}
+.gebruikers #alcoholgebruikers, .alcoholdata span{
+    color: var(--alcohol);
+}
+.cokedata .blokken > section{
+    background-color: var(--coke)
+}
+.gebruikers #cokegebruikers, .cokedata span{
+    color: var(--coke);
+}
+.xtcdata .blokken > section{
+    background-color: var(--xtc)
+}
+.gebruikers #xtcgebruikers, .xtcdata span{
+    color: var(--xtc);
+}
+.amfetaminedata .blokken > section{
+    background-color: var(--amfetamine)
+}
+.gebruikers #amfetaminegebruikers, .amfetaminedata span{
+    color: var(--amfetamine);
+}
+.ghbdata .blokken > section{
+    background-color: var(--ghb)
+}
+.gebruikers #ghbgebruikers, .ghbdata span{
+    color: var(--ghb);
+}
+.lachgasdata .blokken > section{
+    background-color: var(--lachgas)
+}
+.gebruikers #lachgasgebruikers, .lachgasdata span{
+    color: var(--lachgas);
+}
+.ketadata .blokken > section{
+    background-color: var(--keta)
+}
+.gebruikers #ketagebruikers, .ketadata span{
+    color: var(--keta);
+}
+.tabakdata .blokken > section{
+    background-color: var(--tabak)
+}
+.gebruikers #tabakgebruikers, .tabakdata span{
+    color: var(--tabak);
 }

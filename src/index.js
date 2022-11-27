@@ -25,10 +25,37 @@ root.render(
 
 var kruisKnop = document.querySelector(".cross");
 var dataSectie = document.querySelector(".data");
+var wietSpan = document.querySelector(".wietdata");
+var alcoholSpan = document.querySelector(".alcoholdata");
+var cokeSpan = document.querySelector(".cokedata");
+var xtcSpan = document.querySelector(".xtcdata");
+var amfetamineSpan = document.querySelector(".amfetaminedata");
+var ghbSpan = document.querySelector(".ghbdata");
+var lachgasSpan = document.querySelector(".lachgasdata");
+var ketaSpan = document.querySelector(".ketadata");
+var tabakSpan = document.querySelector(".tabakdata");
 
 function afsluiten(){
     dataSectie.classList.add("hide");
     dataSectie.classList.remove("show");
+    wietSpan.classList.add("hide");
+    wietSpan.classList.remove("show");
+    alcoholSpan.classList.add("hide");
+    alcoholSpan.classList.remove("show");
+    cokeSpan.classList.add("hide");
+    cokeSpan.classList.remove("show");
+    xtcSpan.classList.add("hide");
+    xtcSpan.classList.remove("show");
+    amfetamineSpan.classList.add("hide");
+    amfetamineSpan.classList.remove("show");
+    ghbSpan.classList.add("hide");
+    ghbSpan.classList.remove("show");
+    lachgasSpan.classList.add("hide");
+    lachgasSpan.classList.remove("show");
+    ketaSpan.classList.add("hide");
+    ketaSpan.classList.remove("show");
+    tabakSpan.classList.add("hide");
+    tabakSpan.classList.remove("show");
 }
 
 kruisKnop.addEventListener("click", afsluiten)

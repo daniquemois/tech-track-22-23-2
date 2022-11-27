@@ -124,6 +124,8 @@ export default function Experience()
             rotation-y={ 1 }
             onClick={ () => {
                 var dataSectie = document.querySelector(".data");
+                var wietSpan = document.querySelector(".wietdata");
+                wietSpan.classList.add("show");
                 dataSectie.classList.add("show");
             }}
         />
@@ -135,6 +137,12 @@ export default function Experience()
             position-y={ .26}
             position-x={ .75}
             rotation-z={ 1.5 }
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var wietSpan = document.querySelector(".wietdata");
+                wietSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
         />
 
         <primitive
@@ -143,6 +151,12 @@ export default function Experience()
             position-z={ .6 }
             position-y={ .28}
             position-x={ .45}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var xtcSpan = document.querySelector(".xtcdata");
+                xtcSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
         />
 
         <primitive
@@ -151,6 +165,12 @@ export default function Experience()
             position-z={ .6 }
             position-y={ .234}
             position-x={ .45}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var cokeSpan = document.querySelector(".cokedata");
+                cokeSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
         />
 
         <primitive
@@ -160,6 +180,12 @@ export default function Experience()
             rotation-y={ 1 }
             position-y={ .2335}
             position-x={ -.25}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var ketaSpan = document.querySelector(".ketadata");
+                ketaSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
         />
 
         <primitive
@@ -169,6 +195,12 @@ export default function Experience()
             position-y={ .28}
             position-x={ -.25}
             rotation-y={ -2.5}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var amfetamineSpan = document.querySelector(".amfetaminedata");
+                amfetamineSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
         />
 
 
@@ -178,6 +210,12 @@ export default function Experience()
             position-z={ .1 }
             position-y={ .30}
             position-x={ -.2}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var tabakSpan = document.querySelector(".tabakdata");
+                tabakSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
         />
 
         <primitive
@@ -189,6 +227,12 @@ export default function Experience()
             rotation-x={ -1.55}
             rotation-y={ 0}
             rotation-z={ .5}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var ghbSpan = document.querySelector(".ghbdata");
+                ghbSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
         />
 
         <primitive
@@ -197,6 +241,12 @@ export default function Experience()
             position-z={ 1.55 }
             position-y={ -.46}
             position-x={ 3.3}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var lachgasSpan = document.querySelector(".lachgasdata");
+                lachgasSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
         />
 
         <primitive
@@ -206,6 +256,12 @@ export default function Experience()
             position-x={ -.4 }
             position-y={ -1.16}
             rotation-y={ 1.5 }
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var alcoholSpan = document.querySelector(".alcoholdata");
+                alcoholSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
         />
 
 

@@ -24,7 +24,7 @@ function getData() {
       console.log(upper);
     var options = [upper];
     
-    function makeUL(array) {
+    function makeWiet(array) {
     // Create the list element:
     var section = document.createElement('section');
 
@@ -34,16 +34,159 @@ function getData() {
 
     // Set its contents:
     item.appendChild(document.createTextNode(array[0]));
-
-    // Add it to the list:
+    // Add it to the list: 
     section.appendChild(item);
     
 
     // Finally, return the constructed list:
     return section;
 }
+function makeAlcohol(array) {
+  // Create the list element:
+  var section = document.createElement('section');
 
-document.getElementById('wietgebruikers').appendChild(makeUL(options[0]));
+  
+  // Create the list item:
+  var item = document.createElement('h2');
+
+  // Set its contents:
+  item.appendChild(document.createTextNode(array[1]));
+  // Add it to the list: 
+  section.appendChild(item);
+  
+
+  // Finally, return the constructed list:
+  return section;
+}
+function makeCoke(array) {
+  // Create the list element:
+  var section = document.createElement('section');
+
+  
+  // Create the list item:
+  var item = document.createElement('h2');
+
+  // Set its contents:
+  item.appendChild(document.createTextNode(array[5]));
+  // Add it to the list: 
+  section.appendChild(item);
+  
+
+  // Finally, return the constructed list:
+  return section;
+}
+function makeKeta(array) {
+  // Create the list element:
+  var section = document.createElement('section');
+
+  
+  // Create the list item:
+  var item = document.createElement('h2');
+
+  // Set its contents:
+  item.appendChild(document.createTextNode(array[2]));
+  // Add it to the list: 
+  section.appendChild(item);
+  
+
+  // Finally, return the constructed list:
+  return section;
+}
+function makeAmfetamine(array) {
+  // Create the list element:
+  var section = document.createElement('section');
+
+  
+  // Create the list item:
+  var item = document.createElement('h2');
+
+  // Set its contents:
+  item.appendChild(document.createTextNode(array[3]));
+  // Add it to the list: 
+  section.appendChild(item);
+  
+
+  // Finally, return the constructed list:
+  return section;
+}
+function makeTabak(array) {
+  // Create the list element:
+  var section = document.createElement('section');
+
+  
+  // Create the list item:
+  var item = document.createElement('h2');
+
+  // Set its contents:
+  item.appendChild(document.createTextNode(array[4]));
+  // Add it to the list: 
+  section.appendChild(item);
+  
+
+  // Finally, return the constructed list:
+  return section;
+}
+function makeGHB(array) {
+  // Create the list element:
+  var section = document.createElement('section');
+
+  
+  // Create the list item:
+  var item = document.createElement('h2');
+
+  // Set its contents:
+  item.appendChild(document.createTextNode(array[6]));
+  // Add it to the list: 
+  section.appendChild(item);
+  
+
+  // Finally, return the constructed list:
+  return section;
+}
+function makeLachgas(array) {
+  // Create the list element:
+  var section = document.createElement('section');
+
+  
+  // Create the list item:
+  var item = document.createElement('h2');
+
+  // Set its contents:
+  item.appendChild(document.createTextNode(array[7]));
+  // Add it to the list: 
+  section.appendChild(item);
+  
+
+  // Finally, return the constructed list:
+  return section;
+}
+function makeXtc(array) {
+  // Create the list element:
+  var section = document.createElement('section');
+
+  
+  // Create the list item:
+  var item = document.createElement('h2');
+
+  // Set its contents:
+  item.appendChild(document.createTextNode(array[8]));
+  // Add it to the list: 
+  section.appendChild(item);
+  
+
+  // Finally, return the constructed list:
+  return section;
+}
+
+document.getElementById('wietgebruikers').appendChild(makeWiet(options[0]));
+document.getElementById('alcoholgebruikers').appendChild(makeAlcohol(options[0]));
+document.getElementById('cokegebruikers').appendChild(makeCoke(options[0]));
+document.getElementById('ketagebruikers').appendChild(makeKeta(options[0]));
+document.getElementById('amfetaminegebruikers').appendChild(makeAmfetamine(options[0]));
+document.getElementById('tabakgebruikers').appendChild(makeTabak(options[0]));
+document.getElementById('ghbgebruikers').appendChild(makeGHB(options[0]));
+document.getElementById('lachgasgebruikers').appendChild(makeLachgas(options[0]));
+document.getElementById('xtcgebruikers').appendChild(makeXtc(options[0]));
 	})
 }
 
