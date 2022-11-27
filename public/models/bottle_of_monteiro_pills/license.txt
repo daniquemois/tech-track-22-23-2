@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bottle of Monteiro Pills
+* source:	https://sketchfab.com/3d-models/bottle-of-monteiro-pills-a57d13b5e2b44dd78adcba67fedf88ec
+* author:	monteiro (https://sketchfab.com/monteiro)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bottle of Monteiro Pills" (https://sketchfab.com/3d-models/bottle-of-monteiro-pills-a57d13b5e2b44dd78adcba67fedf88ec) by monteiro (https://sketchfab.com/monteiro) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
