@@ -31,9 +31,27 @@ export default function Experience()
 
     const lachgas = useGLTF('../models/balloon/scene.gltf')
 
+    const coke = useGLTF('../models/coke.gltf')
+
+    const keta = useGLTF('../models/keta.gltf')
+
     const bord1 = useGLTF('../models/bord1.gltf')
 
     const bord2 = useGLTF('../models/bord2.gltf')
+
+    const bord3 = useGLTF('../models/bord3.gltf')
+
+    const bord4 = useGLTF('../models/bord4.gltf')
+
+    const bord5 = useGLTF('../models/bord5.gltf')
+
+    const bord6 = useGLTF('../models/bord6.gltf')
+
+    const bord7 = useGLTF('../models/bord7.gltf')
+
+    const bord8 = useGLTF('../models/bord8.gltf')
+
+    const bord9 = useGLTF('../models/9bord.gltf')
     
     return <>
 
@@ -128,6 +146,23 @@ export default function Experience()
         />
 
         <primitive
+            object={ coke.scene }
+            scale={ .5 }
+            position-z={ .6 }
+            position-y={ .234}
+            position-x={ .45}
+        />
+
+        <primitive
+            object={ keta.scene }
+            scale={ .5 }
+            position-z={ .1 }
+            rotation-y={ 1 }
+            position-y={ .2335}
+            position-x={ -.25}
+        />
+
+        <primitive
             object={ amfetamine.scene }
             scale={ .025 }
             position-z={ 1.3 }
@@ -188,6 +223,69 @@ export default function Experience()
             scale={ .01 }
             position-z={ -1.6 }
             position-x={ .85}
+            position-y={ .25}
+            rotation-y={ -1.5 }
+        /> 
+
+        <primitive
+            object={ bord3.scene }
+            scale={ .01 }
+            position-z={ 1.4 }
+            position-x={ 3.35}
+            position-y={ -.25}
+            rotation-y={ -1.5 }
+        /> 
+
+        <primitive
+            object={ bord4.scene }
+            scale={ .01 }
+            position-z={ .1 }
+            position-x={ .85}
+            position-y={ .25}
+            rotation-y={ -1.5 }
+        /> 
+
+        <primitive
+            object={ bord5.scene }
+            scale={ .01 }
+            position-z={ .9 }
+            position-x={ .85}
+            position-y={ .25}
+            rotation-y={ -1.5 }
+        /> 
+
+        <primitive
+            object={ bord6.scene }
+            scale={ .01 }
+            position-z={ -.3 }
+            position-x={ .35}
+            position-y={ .25}
+            rotation-y={ -1.5 }
+        /> 
+
+        <primitive
+            object={ bord7.scene }
+            scale={ .01 }
+            position-z={ -.3 }
+            position-x={ -.45}
+            position-y={ .25}
+            rotation-y={ -1.5 }
+        /> 
+
+        <primitive
+            object={ bord8.scene }
+            scale={ .01 }
+            position-z={ .7 }
+            position-x={ -.05}
+            position-y={ .25}
+            rotation-y={ -1.5 }
+        /> 
+
+        <primitive
+            object={ bord9.scene }
+            scale={ .01 }
+            position-z={ 1.6 }
+            position-x={ .05}
             position-y={ .25}
             rotation-y={ -1.5 }
         /> 
