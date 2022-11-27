@@ -13,7 +13,7 @@ function getData() {
          data.forEach(item => {
                 newArray.push(item["Aantal gebruikers"])
             })
-                  
+                    
 		
 		const upper = newArray.map(element => {
 			return element.charAt(0).toUpperCase() + element.slice(1);
