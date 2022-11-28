@@ -6,7 +6,7 @@
     --white: #ffffff;
     --grey: #999999;
     --black: #000000;
-    --background: rgba(100, 191, 78, .01);
+    --background: rgba(0, 0, 0, .7);
     --wiet: #64BF4E;
     --alcohol: #FE9119;
     --lachgas: #A61D80;
@@ -34,7 +34,6 @@ body,
 .data{
     width: 90%;
     height: 85%;
-    background-color: var(--background);
     color: var(--grey);
     z-index: 100;
     position: absolute;
@@ -93,6 +92,7 @@ body,
     border: 2px solid var(--wiet);
     padding: 2em;
     border-radius: 15px 0px;
+    background-color: var(--background);
 }
 .leeftijdsgroepen svg{
     width: 100%;
