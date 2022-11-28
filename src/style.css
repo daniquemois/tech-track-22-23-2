@@ -4,7 +4,9 @@
 }
 :root{
     --white: #ffffff;
+    --grey: #999999;
     --black: #000000;
+    --background: rgba(100, 191, 78, .01);
     --wiet: #64BF4E;
     --alcohol: #FE9119;
     --lachgas: #A61D80;
@@ -32,7 +34,8 @@ body,
 .data{
     width: 90%;
     height: 85%;
-    background-color: var(--white);
+    background-color: var(--background);
+    color: var(--grey);
     z-index: 100;
     position: absolute;
     padding: 2em;
@@ -78,12 +81,21 @@ body,
     box-shadow: 0px 0px 6px rgb(28 55 90 / 10%);
     padding: .5em;
     text-align: center;
+    color: var(--grey);
 }
 .blokteksten > section{
     aspect-ratio: 1 / 1;
 }
 .wietdata, .alcoholdata, .cokedata, .ketadata, .xtcdata, .ghbdata, .amfetaminedata, .tabakdata, .lachgasdata{
     display: none;
+}
+.wietdata{
+    border: 2px solid var(--wiet);
+    padding: 2em;
+    border-radius: 15px 0px;
+}
+.leeftijdsgroepen svg{
+    width: 100%;
 }
 .hide{
     display: none;
@@ -93,14 +105,14 @@ body,
 }
 /* Kleurtjes drugs */
 .blokken > section span{
-    color: var(--white);
     font-style: italic;
+    border-radius: 15px 0px;
 }
 .gebruikers #wietgebruikers, .wietdata span{
     color: var(--wiet);
 }
 .wietdata .blokken > section{
-    background-color: var(--wiet);
+    border: 2px solid var(--wiet);
 }
 .alcoholdata .blokken > section{
     background-color: var(--alcohol)

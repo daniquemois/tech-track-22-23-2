@@ -44,7 +44,7 @@ import * as d3 from 'd3';
 
             console.log(cannabisData);
             
-    const chartWidth = 300
+    const chartWidth = 200
     const chartHeight = 200
 
     const xScale = d3.scaleLinear()
@@ -71,6 +71,7 @@ import * as d3 from 'd3';
     .join('text')
     .attr('y', d => yScale(d.age) + 15)
     .attr('x', d => xScale(d.percentage) + 15)
+    .attr('fill', "var(--grey)")
     .text(d => d.age);
 
   })}
