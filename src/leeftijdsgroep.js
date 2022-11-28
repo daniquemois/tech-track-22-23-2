@@ -6,46 +6,74 @@ import * as d3 from 'd3';
 	fetch('https://opensheet.elk.sh/1KqzNQUVOkJ1Miw6TlSb5jvmERoKaKZhFU1NUqonl5f0/1')
 		.then(res => res.json())
 		.then(data => {
+            console.log('kaas');
 			console.log(data);
-		
-			let newArray = [];
+
+            const cannabis = data[0];
+
+            const cannabisData = [
+                {
+                    age: "18_19",
+                    percentage: Number(cannabis['Leeftijdsgroepen 18-19'])
+                },
+                {
+                    age: "20_24",
+                    percentage: Number(cannabis['Leeftijdsgroepen 20-24'])
+                },
+                {
+                    age: "25_29",
+                    percentage: Number(cannabis['Leeftijdsgroepen 25-29'])
+                },
+                {
+                    age: "30_39",
+                    percentage: Number(cannabis['Leeftijdsgroepen 30-39'])
+                },
+                {
+                    age: "40_49",
+                    percentage: Number(cannabis['Leeftijdsgroepen 40-49'])
+                },
+                {
+                    age: "50_64",
+                    percentage: Number(cannabis['Leeftijdsgroepen 50-64'])
+                },
+                {
+                    age: "65+",
+                    percentage: Number(cannabis['Leeftijdsgroepen 65+'])
+                }
+            ]
+
+            console.log(cannabisData);
             
-            data.forEach(item => {
-                newArray.push(item["Leeftijdsgroepen 18-19", "Leeftijdsgroepen 18-19"])
-            })
-                
-    var options = [newArray];
-    
-    const chartWidth = 700
-    const chartHeight = 800
+    const chartWidth = 300
+    const chartHeight = 200
 
     const xScale = d3.scaleLinear()
-        .domain([0, d3.max(options, d => d.Aantal)])
+        .domain([0, d3.max(cannabisData, d => d.percentage)])
         .range([0, chartWidth]);
 
     const yScale = d3.scaleBand()
-        .domain(d3.map(options, d => d.Jaar))
+        .domain(d3.map(cannabisData, d => d.age))
         .range([0, chartHeight])
-        .paddingInner(0.05);
+    .paddingInner(0.05);
 
     d3.select('#bars')
     .selectAll('rect')
-    .data(options)
+    .data(cannabisData)
     .join('rect')
     .attr('height', yScale.bandwidth())
-    .attr('width', d => xScale(d.Aantal))
-    .attr('y', d => yScale(d.Jaar))
-    .classed('animate__animated animate__headShake animate__infinite', () => Math.random() > 0.8)
-    .classed('animate__slower', () => Math.random() > 0.5)
+    .attr('width', d => xScale(d.percentage))
+    .attr('fill', "var(--wiet)")
+    .attr('y', d => yScale(d.age))
 
     d3.select('#labels')
     .selectAll('text')
-    .data(options)
+    .data(cannabisData)
     .join('text')
-    .attr('y', d => yScale(d.Jaar) + 15)
-    .text(d => d.Jaar);
-}
-)}
+    .attr('y', d => yScale(d.age) + 15)
+    .attr('x', d => xScale(d.percentage) + 15)
+    .text(d => d.age);
+
+  })}
 
 // setInterval(getData, seconds * 1000)
 

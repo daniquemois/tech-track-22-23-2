@@ -42,7 +42,7 @@ function getData() {
       var item = document.createElement('h2');
     
       // Set its contents:
-      item.appendChild(document.createTextNode(array[1]));
+      item.appendChild(document.createTextNode(array[7]));
       // Add it to the list: 
       section.appendChild(item);
       
@@ -59,7 +59,7 @@ function getData() {
       var item = document.createElement('h2');
     
       // Set its contents:
-      item.appendChild(document.createTextNode(array[5]));
+      item.appendChild(document.createTextNode(array[1]));
       // Add it to the list: 
       section.appendChild(item);
       
@@ -76,7 +76,7 @@ function getData() {
       var item = document.createElement('h2');
     
       // Set its contents:
-      item.appendChild(document.createTextNode(array[2]));
+      item.appendChild(document.createTextNode(array[6]));
       // Add it to the list: 
       section.appendChild(item);
       
@@ -110,7 +110,7 @@ function getData() {
       var item = document.createElement('h2');
     
       // Set its contents:
-      item.appendChild(document.createTextNode(array[4]));
+      item.appendChild(document.createTextNode(array[8]));
       // Add it to the list: 
       section.appendChild(item);
       
@@ -127,7 +127,7 @@ function getData() {
       var item = document.createElement('h2');
     
       // Set its contents:
-      item.appendChild(document.createTextNode(array[6]));
+      item.appendChild(document.createTextNode(array[4]));
       // Add it to the list: 
       section.appendChild(item);
       
@@ -144,7 +144,7 @@ function getData() {
       var item = document.createElement('h2');
     
       // Set its contents:
-      item.appendChild(document.createTextNode(array[7]));
+      item.appendChild(document.createTextNode(array[5]));
       // Add it to the list: 
       section.appendChild(item);
       
@@ -161,7 +161,7 @@ function getData() {
       var item = document.createElement('h2');
     
       // Set its contents:
-      item.appendChild(document.createTextNode(array[8]));
+      item.appendChild(document.createTextNode(array[2]));
       // Add it to the list: 
       section.appendChild(item);
       

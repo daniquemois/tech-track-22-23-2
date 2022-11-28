@@ -19,9 +19,9 @@ function getData() {
 			return element.charAt(0).toUpperCase() + element.slice(1);
 		}).filter(element => {
       return element !== "";
-    }).sort();
+    });
         
-      console.log(upper);
+      console.log("upper", upper);
     var options = [upper];
     
     function makeWiet(array) {
@@ -50,7 +50,7 @@ function makeAlcohol(array) {
   var item = document.createElement('h2');
 
   // Set its contents:
-  item.appendChild(document.createTextNode(array[1]));
+  item.appendChild(document.createTextNode(array[7]));
   // Add it to the list: 
   section.appendChild(item);
   
@@ -67,7 +67,7 @@ function makeCoke(array) {
   var item = document.createElement('h2');
 
   // Set its contents:
-  item.appendChild(document.createTextNode(array[5]));
+  item.appendChild(document.createTextNode(array[1]));
   // Add it to the list: 
   section.appendChild(item);
   
@@ -84,7 +84,7 @@ function makeKeta(array) {
   var item = document.createElement('h2');
 
   // Set its contents:
-  item.appendChild(document.createTextNode(array[2]));
+  item.appendChild(document.createTextNode(array[6]));
   // Add it to the list: 
   section.appendChild(item);
   
@@ -118,7 +118,7 @@ function makeTabak(array) {
   var item = document.createElement('h2');
 
   // Set its contents:
-  item.appendChild(document.createTextNode(array[4]));
+  item.appendChild(document.createTextNode(array[8]));
   // Add it to the list: 
   section.appendChild(item);
   
@@ -135,7 +135,7 @@ function makeGHB(array) {
   var item = document.createElement('h2');
 
   // Set its contents:
-  item.appendChild(document.createTextNode(array[6]));
+  item.appendChild(document.createTextNode(array[4]));
   // Add it to the list: 
   section.appendChild(item);
   
@@ -152,7 +152,7 @@ function makeLachgas(array) {
   var item = document.createElement('h2');
 
   // Set its contents:
-  item.appendChild(document.createTextNode(array[7]));
+  item.appendChild(document.createTextNode(array[5]));
   // Add it to the list: 
   section.appendChild(item);
   
@@ -169,7 +169,7 @@ function makeXtc(array) {
   var item = document.createElement('h2');
 
   // Set its contents:
-  item.appendChild(document.createTextNode(array[8]));
+  item.appendChild(document.createTextNode(array[2]));
   // Add it to the list: 
   section.appendChild(item);
   
