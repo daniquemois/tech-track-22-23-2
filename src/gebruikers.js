@@ -1,5 +1,3 @@
-const seconds = 10;
-
 function getData() {
 	console.log('Grabbing new userdata...');
 	

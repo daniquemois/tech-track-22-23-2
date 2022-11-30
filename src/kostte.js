@@ -33,23 +33,6 @@ function getData() {
         // Finally, return the constructed list:
         return section;
     }
-    function makeAlcohol(array) {
-      // Create the list element:
-      var section = document.createElement('section');
-    
-      
-      // Create the list item:
-      var item = document.createElement('h2');
-    
-      // Set its contents:
-      item.appendChild(document.createTextNode(array[7]));
-      // Add it to the list: 
-      section.appendChild(item);
-      
-    
-      // Finally, return the constructed list:
-      return section;
-    }
     function makeCoke(array) {
       // Create the list element:
       var section = document.createElement('section');
@@ -118,23 +101,6 @@ function getData() {
       // Finally, return the constructed list:
       return section;
     }
-    function makeGHB(array) {
-      // Create the list element:
-      var section = document.createElement('section');
-    
-      
-      // Create the list item:
-      var item = document.createElement('h2');
-    
-      // Set its contents:
-      item.appendChild(document.createTextNode(array[4]));
-      // Add it to the list: 
-      section.appendChild(item);
-      
-    
-      // Finally, return the constructed list:
-      return section;
-    }
     function makeLachgas(array) {
       // Create the list element:
       var section = document.createElement('section');
@@ -171,12 +137,10 @@ function getData() {
     }
     
     document.getElementById('wietkostten').appendChild(makeWiet(options[0]));
-    document.getElementById('alcoholkostten').appendChild(makeAlcohol(options[0]));
     document.getElementById('cokekostten').appendChild(makeCoke(options[0]));
     document.getElementById('ketakostten').appendChild(makeKeta(options[0]));
     document.getElementById('amfetaminekostten').appendChild(makeAmfetamine(options[0]));
     document.getElementById('tabakkostten').appendChild(makeTabak(options[0]));
-    document.getElementById('ghbkostten').appendChild(makeGHB(options[0]));
     document.getElementById('lachgaskostten').appendChild(makeLachgas(options[0]));
     document.getElementById('xtckostten').appendChild(makeXtc(options[0]));
         })

@@ -67,8 +67,12 @@ body,
     height: 3em;
     width: 3em;
     position: absolute;
-    top: 2em;
-    right: 2em;
+    top: 2.5em;
+    right: 2.5em;
+    /* background-image: url("../images/x.svg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
 }
 .blokken{
     color: var(--white);
@@ -88,9 +92,6 @@ body,
     text-align: center;
     color: var(--grey);
 }
-.blokteksten > section{
-    aspect-ratio: 1 / 1;
-}
 .wietdata, .alcoholdata, .cokedata, .ketadata, .xtcdata, .ghbdata, .amfetaminedata, .tabakdata, .lachgasdata{
     display: none;
 }
@@ -107,15 +108,15 @@ body,
     padding: 0;
 }
 .dataziekenhuis li{
-    font-size: 32px;
+    font-size: 24px;
 }
 .dataziekenhuis li:first-of-type:before{
     content: "Hoofddiagnose: ";
-    font-size: 24px;
+    font-size: 16px;
 }
 .dataziekenhuis li:nth-of-type(2):before{
     content: "Nevendiagnose: ";
-    font-size: 24px;
+    font-size: 16px;
 }
 .dataziekenhuis li:nth-of-type(2){
     border-bottom: 2px solid;
@@ -123,7 +124,7 @@ body,
 }
 .dataziekenhuis li:nth-of-type(3){
     margin-top: .5em;
-    font-size: 32px
+    font-size: 24px
 }
 .dataziekenhuis li:nth-of-type(3):before{
     content: "Totaal: ";

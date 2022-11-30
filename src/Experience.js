@@ -3,55 +3,55 @@ import { useGLTF, OrbitControls } from '@react-three/drei'
 
 export default function Experience()
 {
-    const tafel = useGLTF('../models/wooden_table/scene.gltf')
+    const tafel = useGLTF('./models/wooden_table/scene.gltf')
 
-    const bank = useGLTF('../models/old_couch/scene.gltf')
+    const bank = useGLTF('./models/old_couch/scene.gltf')
 
-    const corpse = useGLTF('../models/corpse/scene.gltf')
+    const corpse = useGLTF('./models/corpse/scene.gltf')
 
-    const gun = useGLTF('../models/walther_p88_gun/scene.gltf')
+    const gun = useGLTF('./models/walther_p88_gun/scene.gltf')
 
-    const money = useGLTF('../models/money_stacks_low_poly/scene.gltf')
+    const money = useGLTF('./models/money_stacks_low_poly/scene.gltf')
 
-    const music = useGLTF('../models/music_cassette/scene.gltf')
+    const music = useGLTF('./models/music_cassette/scene.gltf')
 
-    const wiet = useGLTF('../models/new_weed_model/scene.gltf')
+    const wiet = useGLTF('./models/new_weed_model/scene.gltf')
 
-    const joint = useGLTF('../models/joint_scan/scene.gltf')
+    const joint = useGLTF('./models/joint_scan/scene.gltf')
 
-    const beer = useGLTF('../models/johnnys_beer/scene.gltf')
+    const beer = useGLTF('./models/johnnys_beer/scene.gltf')
     
-    const tabak = useGLTF('../models/cigarette_packs/scene.gltf')
+    const tabak = useGLTF('./models/cigarette_packs/scene.gltf')
 
-    const ghb = useGLTF('../models/syringe/scene.gltf')
+    const ghb = useGLTF('./models/syringe/scene.gltf')
 
-    const amfetamine = useGLTF('../models/bottle_of_monteiro_pills/scene.gltf')
+    const amfetamine = useGLTF('./models/bottle_of_monteiro_pills/scene.gltf')
     
-    const xtc = useGLTF('../models/pills/scene.gltf')
+    const xtc = useGLTF('./models/pills/scene.gltf')
 
-    const lachgas = useGLTF('../models/balloon/scene.gltf')
+    const lachgas = useGLTF('./models/balloon/scene.gltf')
 
-    const coke = useGLTF('../models/coke.gltf')
+    const coke = useGLTF('./models/coke.gltf')
 
-    const keta = useGLTF('../models/keta.gltf')
+    const keta = useGLTF('./models/keta.gltf')
 
-    const bord1 = useGLTF('../models/bord1.gltf')
+    const bord1 = useGLTF('./models/bord1.gltf')
 
-    const bord2 = useGLTF('../models/bord2.gltf')
+    const bord2 = useGLTF('./models/bord2.gltf')
 
-    const bord3 = useGLTF('../models/bord3.gltf')
+    const bord3 = useGLTF('./models/bord3.gltf')
 
-    const bord4 = useGLTF('../models/bord4.gltf')
+    const bord4 = useGLTF('./models/bord4.gltf')
 
-    const bord5 = useGLTF('../models/bord5.gltf')
+    const bord5 = useGLTF('./models/bord5.gltf')
 
-    const bord6 = useGLTF('../models/bord6.gltf')
+    const bord6 = useGLTF('./models/bord6.gltf')
 
-    const bord7 = useGLTF('../models/bord7.gltf')
+    const bord7 = useGLTF('./models/bord7.gltf')
 
-    const bord8 = useGLTF('../models/bord8.gltf')
+    const bord8 = useGLTF('./models/bord8.gltf')
 
-    const bord9 = useGLTF('../models/9bord.gltf')
+    const bord9 = useGLTF('./models/9bord.gltf')
     
     return <>
 

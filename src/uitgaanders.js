@@ -204,7 +204,7 @@ import * as d3 from 'd3';
 				return color(d.data.percentage);
 				});	
 			
-			var ketasvg = d3.select('#ketasvg')
+			var ketasvg = d3.select('#ketachart')
 				.append("svg")
 				.attr('width', width)
 				.attr('height', height)

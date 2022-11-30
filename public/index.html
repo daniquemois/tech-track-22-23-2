@@ -18,7 +18,7 @@
     </video>
 
     <section class="data">
-        <img class="cross wiet" src="images/x.svg">
+        <button class="cross wiet" src="images/x.svg"></button>
         <!-- wiet -->
         <span class="wietdata">
             <article class="gebruikers">
@@ -58,8 +58,8 @@
                 <section class="leeftijdsgroep">
                     <svg width="100%" height="200">
                         <g id="bars"></g>
-                        <g id="labelsx" transform="translate(90, 0)"></g>
-                        <g id="labelsy"></g>
+                        <g id="labelsx" transform="translate(0, 90)"></g>
+                        <g id="labelsy" transform="translate(90, 0)"></g>
                     </svg>
                 </section>
             </article>
@@ -72,10 +72,6 @@
             </article>
             <article class="blokken">
                 <section class="uitgaanders">
-                    <article id="alcoholuitgaanders"></article>
-                    <h4>Percentage uitgaanders die <span>alcohol</span> gebruiken.</h4>
-                </section>
-                <section class="uitgaanders">
                     <h4>Percentage ziekenhuisopnames die door <span>alcohol</span> worden veroorzaakt.</h4>
                 </section>
                 <section class="uitgaanders">
@@ -83,10 +79,11 @@
                 </section>
             </article>
             <article class="blokteksten">
-                <section class="background">
-                    <h5>Uitgaanders die cannabis gebruiken</h5>
-                    <h5>Uitgaanders die geen cannabis gebruiken</h5>
-                    <div id="alcoholchart" class="pie">
+                <section class="manvrouw">
+                    <h5>Mannen drinken gemiddeld</h5>
+                    <article id="alcoholman"></article>
+                    <h5>Vrouwen drinken gemiddeld</h5>
+                    <article id="alcoholvrouw"></article>
                 </section>
                 <section class="dataziekenhuis">
                     <article id="alcoholziekenhuis">
@@ -160,9 +157,6 @@
                     <h4>Het geld die gebruikers per keer aan <span>ketamine</span> uitgeven.</h4>
                 </section>
                 <section class="uitgaanders">
-                    <h4>Percentage ziekenhuisopnames die door <span>ketamine</span> worden veroorzaakt.</h4>
-                </section>
-                <section class="uitgaanders">
                     <h4>Percentage per leeftijdsgroep die <span>ketamine</span> gebruiken!</h4>
                 </section>
             </article>
@@ -174,11 +168,6 @@
                 </section>
                 <section class="datakosten">
                     <article id="ketakostten"></article>
-                </section>
-                <section class="dataziekenhuis">
-                    <article id="ketaziekenhuis">
-
-                    </article>
                 </section>
                 <section class="leeftijdsgroep">
                     <svg width="200" height="200">
