@@ -8,7 +8,7 @@ function getData() {
 		.then(data => {
 			console.log(data);
             
-        const manVrouw = data[7];
+        const manVrouw = data[0];
         const manvrouw = [
             {
                 glazen: "glazen",
@@ -18,8 +18,7 @@ function getData() {
                 glazen: "glazen",
                 percentage: Number(manVrouw['Vrouwen'])
             }
-        ]
-                    
+        ]         
     var options = [manvrouw];
     
     function makeMan(array) {
@@ -31,7 +30,7 @@ function getData() {
     var item = document.createElement('h2');
 
     // Set its contents:
-    item.appendChild(document.createTextNode(array[0]));
+    item.appendChild(document.createTextNode(array));
     // Add it to the list: 
     section.appendChild(item);
     
@@ -48,7 +47,7 @@ function getData() {
         var item = document.createElement('h2');
     
         // Set its contents:
-        item.appendChild(document.createTextNode(array[0]));
+        item.appendChild(document.createTextNode(array));
         // Add it to the list: 
         section.appendChild(item);
         
@@ -58,8 +57,8 @@ function getData() {
         }
 
 
-document.getElementById('alcoholman').appendChild(makeWiet(options[0]));
-document.getElementById('alcoholvrouw').appendChild(makeAlcohol(options[0]));
+document.getElementById('alcoholman').appendChild(makeMan(options[0]));
+document.getElementById('alcoholvrouw').appendChild(makeVrouw(options[1]));
 	})
 }
 

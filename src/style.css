@@ -69,7 +69,7 @@ body,
     position: absolute;
     top: 2.5em;
     right: 2.5em;
-    /* background-image: url("../images/x.svg"); */
+    background-image: url("../public/images/x.svg");
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
@@ -328,6 +328,30 @@ body,
     opacity: .5;
 }
 /* kruisje */
-.wiet{
+.wietdata button{
     background-color: var(--wiet);
+}
+.cokedata button{
+    background-color: var(--coke);
+}
+.xtcdata button{
+    background-color: var(--xtc);
+}
+.amfetaminedata button{
+    background-color: var(--amfetamine);
+}
+.ghbdata button{
+    background-color: var(--ghb);
+}
+.lachgasdata button{
+    background-color: var(--lachgas);
+}
+.ketadata button{
+    background-color: var(--keta);
+}
+.alcoholdata button{
+    background-color: var(--alcohol);
+}
+.tabakdata button{
+    background-color: var(--tabak);
 }

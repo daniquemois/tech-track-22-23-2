@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c4788539.css",
+    "main.js": "/static/js/main.2fa36937.js",
+    "static/media/Pastoral-Regular.ttf": "/static/media/Pastoral-Regular.bea6330c43d32ca4ff0a.ttf",
+    "static/media/Pastoral-Regular.woff": "/static/media/Pastoral-Regular.e4df12fdecdb4d88eddc.woff",
+    "index.html": "/index.html",
+    "static/media/x.svg": "/static/media/x.5daad27e230d3311790a.svg",
+    "main.c4788539.css.map": "/static/css/main.c4788539.css.map",
+    "main.2fa36937.js.map": "/static/js/main.2fa36937.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4788539.css",
+    "static/js/main.2fa36937.js"
+  ]
+}

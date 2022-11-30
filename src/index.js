@@ -7,6 +7,7 @@ import uitgaanders from './uitgaanders.js'
 import kostten from './kostte.js'
 import leeftijdsgroep from './leeftijdsgroep.js'
 import ziekenhuis from './ziekenhuis.js'
+import alcohol from './alcohol.js'
 
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
