@@ -88,8 +88,7 @@ body,
 .wietdata, .alcoholdata, .cokedata, .ketadata, .xtcdata, .ghbdata, .amfetaminedata, .tabakdata, .lachgasdata{
     display: none;
 }
-.wietdata{
-    border: 2px solid var(--wiet);
+.wietdata, .alcoholdata, .cokedata, .ketadata, .xtcdata, .ghbdata, .amfetaminedata, .tabakdata, .lachgasdata{
     padding: 2em;
     border-radius: 15px 0px;
     background-color: var(--background);
@@ -97,11 +96,88 @@ body,
 .leeftijdsgroepen svg{
     width: 100%;
 }
+.dataziekenhuis ul{
+    list-style: none;
+    padding: 0;
+}
+.dataziekenhuis li{
+    font-size: 32px;
+}
+.dataziekenhuis li:first-of-type:before{
+    content: "Hoofddiagnose: ";
+    font-size: 24px;
+}
+.dataziekenhuis li:nth-of-type(2):before{
+    content: "Nevendiagnose: ";
+    font-size: 24px;
+}
+.dataziekenhuis li:nth-of-type(2){
+    border-bottom: 2px solid;
+    padding: .5em;
+}
+.dataziekenhuis li:nth-of-type(3){
+    margin-top: .5em;
+    font-size: 32px
+}
+.dataziekenhuis li:nth-of-type(3):before{
+    content: "Totaal: ";
+    font-size: 24px;
+    color: var(--grey);
+}
 .hide{
     display: none;
 }
 .show{
     display: block;
+}
+/* kleurtjes chart */
+.wietdata .pie path{
+    fill: var(--wiet);
+}
+.wietdata .pie path:nth-of-type(2){
+    opacity: .5;
+}
+.ketadata .pie path{
+    fill: var(--keta);
+}
+.ketadata .pie path:nth-of-type(2){
+    opacity: .5;
+}
+.cokedata .pie path{
+    fill: var(--coke);
+}
+.cokedata .pie path:nth-of-type(2){
+    opacity: .5;
+}
+.xtcdata .pie path{
+    fill: var(--xtc);
+}
+.xtcdata .pie path:nth-of-type(2){
+    opacity: .5;
+}
+.amfetaminedata .pie path{
+    fill: var(--amfetamine);
+}
+.amfetaminedata .pie path:nth-of-type(2){
+    opacity: .5;
+}
+.ghbdata .pie path{
+    fill: var(--ghb);
+}
+.ghbdata .pie path:nth-of-type(2){
+    opacity: .5;
+}
+.lachgasdata .pie path{
+    fill: var(--lachgas);
+}
+.lachgasdata .pie path:nth-of-type(2){
+    opacity: .5;
+}
+.tabakdata .pie path{
+    fill: var(--tabak);
+}
+.tabakdata .pie path:nth-of-type(2){
+    opacity: .5;
 }
 /* Kleurtjes drugs */
 .blokken > section span{
@@ -115,50 +191,136 @@ body,
     border: 2px solid var(--wiet);
 }
 .alcoholdata .blokken > section{
-    background-color: var(--alcohol)
+    border: 2px solid var(--alcohol)
 }
 .gebruikers #alcoholgebruikers, .alcoholdata span{
     color: var(--alcohol);
 }
 .cokedata .blokken > section{
-    background-color: var(--coke)
+    border: 2px solid var(--coke)
 }
 .gebruikers #cokegebruikers, .cokedata span{
     color: var(--coke);
 }
 .xtcdata .blokken > section{
-    background-color: var(--xtc)
+    border: 2px solid var(--xtc)
 }
 .gebruikers #xtcgebruikers, .xtcdata span{
     color: var(--xtc);
 }
 .amfetaminedata .blokken > section{
-    background-color: var(--amfetamine)
+    border: 2px solid var(--amfetamine)
 }
 .gebruikers #amfetaminegebruikers, .amfetaminedata span{
     color: var(--amfetamine);
 }
 .ghbdata .blokken > section{
-    background-color: var(--ghb)
+    border: 2px solid var(--ghb)
 }
 .gebruikers #ghbgebruikers, .ghbdata span{
     color: var(--ghb);
 }
 .lachgasdata .blokken > section{
-    background-color: var(--lachgas)
+    border: 2px solid var(--lachgas)
 }
 .gebruikers #lachgasgebruikers, .lachgasdata span{
     color: var(--lachgas);
 }
 .ketadata .blokken > section{
-    background-color: var(--keta)
+    border: 2px solid var(--keta)
 }
 .gebruikers #ketagebruikers, .ketadata span{
     color: var(--keta);
 }
 .tabakdata .blokken > section{
-    background-color: var(--tabak)
+    border: 2px solid var(--tabak)
 }
 .gebruikers #tabakgebruikers, .tabakdata span{
     color: var(--tabak);
+}
+.wietdata{
+    border: 2px solid var(--wiet);
+}
+.cokedata{
+    border: 2px solid var(--coke);
+}
+.alcoholdata{
+    border: 2px solid var(--alcohol);
+}
+.ketadata{
+    border: 2px solid var(--keta);
+}
+.xtcdata{
+    border: 2px solid var(--xtc);
+}
+.ghbdata{
+    border: 2px solid var(--ghb);
+}
+.amfetaminedata{
+    border: 2px solid var(--amfetamine);
+}
+.tabakdata{
+    border: 2px solid var(--tabak);
+}
+.lachgasdata{
+    border: 2px solid var(--lachgas);
+}
+/* Ziekenhuis kleur */
+#wietziekenhuis li:nth-of-type(3), .wietdata h5{
+    color: var(--wiet);
+}
+.wietdata h5:nth-of-type(2){
+    opacity: .5;
+}
+#alcoholziekenhuis li:nth-of-type(3), .alcoholdata h5{
+    color: var(--alcohol);
+}
+.alcoholdata h5:nth-of-type(2){
+    opacity: .5;
+}
+#cokeziekenhuis li:nth-of-type(3), .cokedata h5{
+    color: var(--coke);
+}
+.cokedata h5:nth-of-type(2){
+    opacity: .5;
+}
+#xtcziekenhuis li:nth-of-type(3), .xtcdata h5{
+    color: var(--xtc);
+}
+.xtcdata h5:nth-of-type(2){
+    opacity: .5;
+}
+#amfetamineziekenhuis li:nth-of-type(3), .amfetaminedata h5{
+    color: var(--amfetamine);
+}
+.amfetaminedata h5:nth-of-type(2){
+    opacity: .5;
+}
+#tabakziekenhuis li:nth-of-type(3), .tabakdata h5{
+    color: var(--tabak);
+}
+.tabakdata h5:nth-of-type(2){
+    opacity: .5;
+}
+.ketadata h5{
+    color: var(--keta);
+}
+.ketadata h5:nth-of-type(2){
+    opacity: .5;
+}
+.lachgasdata h5{
+    color: var(--lachgas);
+}
+.lachgasdata h5:nth-of-type(2){
+    opacity: .5;
+}
+.ghbdata h5{
+    color: var(--ghb);
+}
+.ghbdata h5:nth-of-type(2){
+    opacity: .5;
+}
+/* kruisje */
+.wiet{
+    background-color: var(--wiet);
 }

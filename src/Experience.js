@@ -29,7 +29,7 @@ export default function Experience()
     
     const xtc = useGLTF('../models/pills/scene.gltf')
 
-    const lachgas = useGLTF('../models/balloon/scene.gltf')
+    const lachgas = useGLTF('../models/balloon/scene.glb')
 
     const coke = useGLTF('../models/coke.gltf')
 

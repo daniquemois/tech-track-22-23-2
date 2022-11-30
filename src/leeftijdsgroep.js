@@ -6,7 +6,6 @@ import * as d3 from 'd3';
 	fetch('https://opensheet.elk.sh/1KqzNQUVOkJ1Miw6TlSb5jvmERoKaKZhFU1NUqonl5f0/1')
 		.then(res => res.json())
 		.then(data => {
-            console.log('kaas');
 			console.log(data);
 
             const cannabis = data[0];
@@ -65,15 +64,21 @@ import * as d3 from 'd3';
     .attr('fill', "var(--wiet)")
     .attr('y', d => yScale(d.age))
 
-    d3.select('#labels')
+    d3.select('#labelsy')
     .selectAll('text')
     .data(cannabisData)
     .join('text')
-    .attr('y', d => yScale(d.age) + 15)
+    .attr('y', d => yScale(d.age) - 15)
+    .attr('fill', "var(--grey)")
+    .text(d => d.age)
+
+    d3.select('#labelsx')
+    .selectAll('text')
+    .data(cannabisData)
+    .join('text')
     .attr('x', d => xScale(d.percentage) + 15)
     .attr('fill', "var(--grey)")
-    .text(d => d.age);
-
+    .text(d => d.percentage);
   })}
 
 // setInterval(getData, seconds * 1000)
