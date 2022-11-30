@@ -31,6 +31,12 @@ body,
     align-items: center;
     font-family: "Pastoral";
 }
+.video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
 .data{
     width: 90%;
     height: 85%;

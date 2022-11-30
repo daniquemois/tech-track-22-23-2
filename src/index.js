@@ -61,3 +61,10 @@ function afsluiten(){
 
 kruisKnop.addEventListener("click", afsluiten)
  
+var video = document.querySelector(".video")
+function videohide(){
+    video.classList.add("hide")
+    video.pause(); 
+    video.currentTime = 0;
+}
+video.addEventListener("click", videohide)

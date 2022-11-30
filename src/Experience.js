@@ -29,7 +29,7 @@ export default function Experience()
     
     const xtc = useGLTF('../models/pills/scene.gltf')
 
-    const lachgas = useGLTF('../models/balloon/scene.glb')
+    const lachgas = useGLTF('../models/balloon/scene.gltf')
 
     const coke = useGLTF('../models/coke.gltf')
 
@@ -71,6 +71,11 @@ export default function Experience()
             scale={ 1.7 }
             position-y={ -1.1 }
             position-x={ 4.5 }
+            onClick={ () => {
+                var video = document.querySelector(".video");
+                video.classList.remove("hide");
+                video.play();
+            }}
         />
 
         <primitive
