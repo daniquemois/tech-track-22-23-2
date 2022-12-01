@@ -5,17 +5,16 @@
 </section>
 
 <section align="center">
-<a href="https://img.shields.io/github/issues/daniquemois/tech-track-22-23"><img alt="GitHub issues" src="https://img.shields.io/github/issues/daniquemois/tech-track-22-23"></a>
-<a href="https://img.shields.io/github/forks/daniquemois/tech-track-22-23"><img alt="GitHub forks" src="https://img.shields.io/github/forks/daniquemois/tech-track-22-23"></a>
-<a href="https://img.shields.io/github/stars/daniquemois/tech-track-22-23"><img alt="GitHub stars" src="https://img.shields.io/github/stars/daniquemois/tech-track-22-23"></a>
-<a href="https://img.shields.io/github/license/daniquemois/tech-track-22-23"><img alt="GitHub license" src="https://img.shields.io/github/license/daniquemois/tech-track-22-23"></a>
+<a href="https://img.shields.io/github/issues/daniquemois/tech-track-22-23-2"><img alt="GitHub issues" src="https://img.shields.io/github/issues/daniquemois/tech-track-22-23"></a>
+<a href="https://img.shields.io/github/forks/daniquemois/tech-track-22-23-2"><img alt="GitHub forks" src="https://img.shields.io/github/forks/daniquemois/tech-track-22-23"></a>
+<a href="https://img.shields.io/github/stars/daniquemois/tech-track-22-23-2"><img alt="GitHub stars" src="https://img.shields.io/github/stars/daniquemois/tech-track-22-23"></a>
+<a href="https://img.shields.io/github/license/daniquemois/tech-track-22-23-2"><img alt="GitHub license" src="https://img.shields.io/github/license/daniquemois/tech-track-22-23"></a>
   </section>
   
 <section>
   <h2 style="color: #F54E4F">Inhoudsopgave</h2>
   <section>
     <ul>
-      <li><a href="#voorwoord">Voorwoord</a></li>
       <li><a href="#inleiding">Inleiding</a></li>
       <li><a href="#idee">Doel & algemene informatie</a></li>
       <li><a href="#installatie">Installatie</a></li>
@@ -23,20 +22,10 @@
     </ul>
   </section>
 </section>
-
-<section>
-  <h2 id="voorwoord">Voorwoord</h2>
-  <p>Later invullen</p>
-</section>
   
 <section>
   <h2 id="inleiding">Inleiding</h2>
-  <p>Absoluut nog even invullen</p>
-</section>
-  
-<section>
-  <h2 id="idee">Concept</h2>
-  <p>Het doel van deze repository</p>
+  <p>Hi! Welkom bij mijn repository voor het tech track. Ik heb een drugskelder gemaakt waarin je de verschillende soorten drugs kan bekijken. Op deze manier komt er data tevoorschijn. Ik heb dit allemaal gemaakt nieuwe kennis over three.js en react. </p>
 </section>
   
 <section>
