@@ -1,3 +1,13 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 @font-face {
     font-family: 'Pastoral';
     src: url('../public/fonts/Pastoral-Regular.ttf') format("ttf"), url('../public/fonts/Pastoral-Regular.woff') format("woff");;
@@ -272,6 +282,9 @@ button{
 .lachgasdata{
     border: 2px solid var(--lachgas);
 }
+.background h5:nth-of-type(2){
+    margin-bottom: 1em;
+}
 /* Ziekenhuis kleur */
 #wietziekenhuis li:nth-of-type(3), .wietdata h5{
     color: var(--wiet);
@@ -328,30 +341,58 @@ button{
     opacity: .5;
 }
 /* kruisje */
-.wietknop button{
+.wietdata button{
     background-color: var(--wiet);
 }
-.cokeknop button{
+.cokedata button{
     background-color: var(--coke);
 }
-.xtcknop button{
+.xtcdata button{
     background-color: var(--xtc);
 }
-.amfetamineknop button{
+.amfetaminedata button{
     background-color: var(--amfetamine);
 }
-.ghbknop button{
+.ghbdata button{
     background-color: var(--ghb);
 }
-.lachgasknop button{
+.lachgasdata button{
     background-color: var(--lachgas);
 }
-.ketaknop button{
+.ketadata button{
     background-color: var(--keta);
 }
-.alcoholknop button{
+.alcoholdata button{
     background-color: var(--alcohol);
 }
-.tabakknop button{
+.tabakdata button{
     background-color: var(--tabak);
+}
+.datakosten h2:before{
+    content: "€";
+}
+/* grafiek */
+#labelsx text:nth-of-type(1), #alcohollabelsx text:nth-of-type(1), #cokelabelsx text:nth-of-type(1), #xtclabelsx text:nth-of-type(1), #amfetaminelabelsx text:nth-of-type(1), #ghblabelsx text:nth-of-type(1), #lachgaslabelsx text:nth-of-type(1), #ketalabelsx text:nth-of-type(1), #tabaklabelsx text:nth-of-type(1){
+    transform: translate(0%, 16px);
+}
+#labelsx text:nth-of-type(2), #alcohollabelsx text:nth-of-type(2), #cokelabelsx text:nth-of-type(2), #xtclabelsx text:nth-of-type(2), #amfetaminelabelsx text:nth-of-type(2), #ghblabelsx text:nth-of-type(2), #lachgaslabelsx text:nth-of-type(2), #ketalabelsx text:nth-of-type(2), #tabaklabelsx text:nth-of-type(2){
+    transform: translate(0%, 46px);
+}
+#labelsx text:nth-of-type(3), #alcohollabelsx text:nth-of-type(3), #cokelabelsx text:nth-of-type(3), #xtclabelsx text:nth-of-type(3), #amfetaminelabelsx text:nth-of-type(3), #ghblabelsx text:nth-of-type(3), #lachgaslabelsx text:nth-of-type(3), #ketalabelsx text:nth-of-type(3), #tabaklabelsx text:nth-of-type(3){
+    transform: translate(0%, 76px);
+}
+#labelsx text:nth-of-type(4), #alcohollabelsx text:nth-of-type(4), #cokelabelsx text:nth-of-type(4), #xtclabelsx text:nth-of-type(4), #amfetaminelabelsx text:nth-of-type(4), #ghblabelsx text:nth-of-type(4), #lachgaslabelsx text:nth-of-type(4), #ketalabelsx text:nth-of-type(4), #tabaklabelsx text:nth-of-type(4){
+    transform: translate(0%, 106px)
+}
+#labelsx text:nth-of-type(5), #alcohollabelsx text:nth-of-type(5), #cokelabelsx text:nth-of-type(5), #xtclabelsx text:nth-of-type(5), #amfetaminelabelsx text:nth-of-type(5), #ghblabelsx text:nth-of-type(5), #lachgaslabelsx text:nth-of-type(5), #ketalabelsx text:nth-of-type(5), #tabaklabelsx text:nth-of-type(5){
+    transform: translate(0%, 136px);
+}
+#labelsx text:nth-of-type(6), #alcohollabelsx text:nth-of-type(6), #cokelabelsx text:nth-of-type(6), #xtclabelsx text:nth-of-type(6), #amfetaminelabelsx text:nth-of-type(6), #ghblabelsx text:nth-of-type(6), #lachgaslabelsx text:nth-of-type(6), #ketalabelsx text:nth-of-type(6), #tabaklabelsx text:nth-of-type(6){
+    transform: translate(0%, 166px);
+}
+#labelsx text:nth-of-type(7), #alcohollabelsx text:nth-of-type(7), #cokelabelsx text:nth-of-type(7), #xtclabelsx text:nth-of-type(7), #amfetaminelabelsx text:nth-of-type(7), #ghblabelsx text:nth-of-type(7), #lachgaslabelsx text:nth-of-type(7), #ketalabelsx text:nth-of-type(7), #tabaklabelsx text:nth-of-type(7){
+    transform: translate(0%, 196px);
+}
+#labelsy, #alcohollabelsy, #cokelabelsy, #xtclabelsy, #amfetaminelabelsy, #ghblabelsy, #lachgaslabelsy, #ketalabelsy, #tabaklabelsy{
+    transform: translate(220px, 35px);
 }
