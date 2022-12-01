@@ -2,12 +2,12 @@ import './style.css'
 import ReactDOM from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'
 import Experience from './Experience.js'
-import gebruikers from './gebruikers.js'
-import uitgaanders from './uitgaanders.js'
-import kostten from './kostte.js'
-import leeftijdsgroep from './leeftijdsgroep.js'
-import ziekenhuis from './ziekenhuis.js'
-import alcohol from './alcohol.js'
+import './gebruikers.js'
+import './uitgaanders.js'
+import './kostte.js'
+import './leeftijdsgroep.js'
+import './ziekenhuis.js'
+import './alcohol.js'
 
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
@@ -25,7 +25,16 @@ root.render(
     </Canvas>
 )
 
-var kruisKnop = document.querySelector(".cross");
+var wietKnop = document.querySelector(".wietdata button");
+var alcoholKnop = document.querySelector(".alcoholdata button");
+var cokeKnop = document.querySelector(".cokedata button");
+var xtcKnop = document.querySelector(".xtcdata button");
+var amfetamineKnop = document.querySelector(".amfetaminedata button");
+var ghbKnop = document.querySelector(".ghbdata button");
+var lachgasKnop = document.querySelector(".lachgasdata button");
+var ketaKnop = document.querySelector(".ketadata button");
+var tabakKnop = document.querySelector(".tabakdata button");
+
 var dataSectie = document.querySelector(".data");
 var wietSpan = document.querySelector(".wietdata");
 var alcoholSpan = document.querySelector(".alcoholdata");
@@ -42,26 +51,73 @@ function afsluiten(){
     dataSectie.classList.remove("show");
     wietSpan.classList.add("hide");
     wietSpan.classList.remove("show");
+}
+wietKnop.addEventListener("click", afsluiten)
+
+function sluitalcohol(){
+    dataSectie.classList.add("hide");
+    dataSectie.classList.remove("show");
     alcoholSpan.classList.add("hide");
     alcoholSpan.classList.remove("show");
+}
+alcoholKnop.addEventListener("click", sluitalcohol)
+
+function sluitCoke(){
+    dataSectie.classList.add("hide");
+    dataSectie.classList.remove("show");
     cokeSpan.classList.add("hide");
     cokeSpan.classList.remove("show");
+}
+cokeKnop.addEventListener("click", sluitCoke)
+
+function sluitxtc(){
+    dataSectie.classList.add("hide");
+    dataSectie.classList.remove("show");
     xtcSpan.classList.add("hide");
     xtcSpan.classList.remove("show");
+}
+xtcKnop.addEventListener("click", sluitxtc)
+
+function sluitAmfetamine(){
+    dataSectie.classList.add("hide");
+    dataSectie.classList.remove("show");
     amfetamineSpan.classList.add("hide");
     amfetamineSpan.classList.remove("show");
+}
+amfetamineKnop.addEventListener("click", sluitAmfetamine)
+
+function sluitGhb(){
+    dataSectie.classList.add("hide");
+    dataSectie.classList.remove("show");
     ghbSpan.classList.add("hide");
     ghbSpan.classList.remove("show");
+}
+ghbKnop.addEventListener("click", sluitGhb)
+
+function sluitLachgas(){
+    dataSectie.classList.add("hide");
+    dataSectie.classList.remove("show");
     lachgasSpan.classList.add("hide");
     lachgasSpan.classList.remove("show");
+}
+lachgasKnop.addEventListener("click", sluitLachgas)
+
+function sluitKeta(){
+    dataSectie.classList.add("hide");
+    dataSectie.classList.remove("show");
     ketaSpan.classList.add("hide");
     ketaSpan.classList.remove("show");
+}
+ketaKnop.addEventListener("click", sluitKeta)
+
+function sluitTabak(){
+    dataSectie.classList.add("hide");
+    dataSectie.classList.remove("show");
     tabakSpan.classList.add("hide");
     tabakSpan.classList.remove("show");
 }
+tabakKnop.addEventListener("click", sluitTabak)
 
-kruisKnop.addEventListener("click", afsluiten)
- 
 var video = document.querySelector(".video")
 function videohide(){
     video.classList.add("hide")

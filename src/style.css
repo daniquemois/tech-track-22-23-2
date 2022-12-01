@@ -63,7 +63,7 @@ body,
     color: var(--wiet);
     font-style: italic;
 }
-.cross{
+button{
     height: 3em;
     width: 3em;
     position: absolute;
@@ -328,30 +328,30 @@ body,
     opacity: .5;
 }
 /* kruisje */
-.wietdata button{
+.wietknop button{
     background-color: var(--wiet);
 }
-.cokedata button{
+.cokeknop button{
     background-color: var(--coke);
 }
-.xtcdata button{
+.xtcknop button{
     background-color: var(--xtc);
 }
-.amfetaminedata button{
+.amfetamineknop button{
     background-color: var(--amfetamine);
 }
-.ghbdata button{
+.ghbknop button{
     background-color: var(--ghb);
 }
-.lachgasdata button{
+.lachgasknop button{
     background-color: var(--lachgas);
 }
-.ketadata button{
+.ketaknop button{
     background-color: var(--keta);
 }
-.alcoholdata button{
+.alcoholknop button{
     background-color: var(--alcohol);
 }
-.tabakdata button{
+.tabakknop button{
     background-color: var(--tabak);
 }
