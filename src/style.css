@@ -396,3 +396,76 @@ button{
 #labelsy, #alcohollabelsy, #cokelabelsy, #xtclabelsy, #amfetaminelabelsy, #ghblabelsy, #lachgaslabelsy, #ketalabelsy, #tabaklabelsy{
     transform: translate(220px, 35px);
 }
+
+/* ---- Laadscherm ---- */
+.loader{
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle at 50% 35%, #1c1111 0%, #090606 72%);
+    transition: opacity .7s ease;
+}
+.loader--done{
+    opacity: 0;
+    pointer-events: none;
+}
+.loader__inner{
+    max-width: 470px;
+    padding: 0 28px;
+    text-align: center;
+    font-family: "Courier New", ui-monospace, monospace;
+    color: #e9dede;
+}
+.loader__eyebrow{
+    margin: 0 0 14px;
+    color: #F54E4F;
+    font-size: .72rem;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+}
+.loader__title{
+    margin: 0 0 16px;
+    font-size: clamp(2rem, 7vw, 3.3rem);
+    letter-spacing: .02em;
+    color: #f4ecec;
+    animation: loaderFlicker 4.5s infinite steps(1, end);
+}
+.loader__intro{
+    margin: 0 0 30px;
+    font-size: .95rem;
+    line-height: 1.65;
+    color: #b7a6a6;
+}
+.loader__intro strong{ color: #F54E4F; }
+.loader__bar{
+    width: 100%;
+    height: 6px;
+    background: #3a2626;
+    border-radius: 99px;
+    overflow: hidden;
+}
+.loader__fill{
+    height: 100%;
+    border-radius: 99px;
+    background: linear-gradient(90deg, #8a2b2b, #F54E4F);
+    box-shadow: 0 0 12px rgba(245, 78, 79, .6);
+    transition: width .15s linear;
+}
+.loader__status{
+    margin: 14px 0 0;
+    font-size: .76rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: #8f7f7f;
+}
+@keyframes loaderFlicker{
+    0%, 18%, 22%, 54%, 57%, 100% { opacity: 1; }
+    20% { opacity: .72; }
+    55% { opacity: .55; }
+    56% { opacity: .9; }
+}
+@media (prefers-reduced-motion: reduce){
+    .loader__title{ animation: none; }
+}

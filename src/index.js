@@ -2,7 +2,7 @@ import './style.css'
 import { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'
-import { Loader } from '@react-three/drei'
+import LoadingScreen from './LoadingScreen.js'
 import Experience from './Experience.js'
 import './gebruikers.js'
 import './uitgaanders.js'
@@ -28,32 +28,7 @@ root.render(
             </Suspense>
         </Canvas>
 
-        <Loader
-            containerStyles={ {
-                background: 'radial-gradient(circle at 50% 40%, #1c1111 0%, #0a0606 100%)'
-            } }
-            innerStyles={ {
-                width: '240px',
-                height: '6px',
-                background: '#3a2626',
-                borderRadius: '99px',
-                overflow: 'hidden'
-            } }
-            barStyles={ {
-                height: '6px',
-                background: '#F54E4F',
-                borderRadius: '99px'
-            } }
-            dataStyles={ {
-                marginTop: '16px',
-                color: '#f3e4e4',
-                fontFamily: 'monospace',
-                fontSize: '13px',
-                letterSpacing: '0.12em',
-                textTransform: 'uppercase'
-            } }
-            dataInterpolation={ (p) => `De kelder laadt… ${p.toFixed(0)}%` }
-        />
+        <LoadingScreen />
     </>
 )
 
