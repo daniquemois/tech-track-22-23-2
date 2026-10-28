@@ -29,6 +29,8 @@ export default function Experience()
     
     const xtc = useGLTF('./models/pills/scene.gltf')
 
+    const lachgas = useGLTF('./models/balloon/scene.gltf')
+
     const bord1 = useGLTF('./models/bord1.gltf')
 
     const bord2 = useGLTF('./models/bord2.gltf')
@@ -199,6 +201,20 @@ export default function Experience()
                 var dataSectie = document.querySelector(".data");
                 var ghbSpan = document.querySelector(".ghbdata");
                 ghbSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
+        />
+
+        <primitive
+            object={ lachgas.scene }
+            scale={ .007 }
+            position-z={ 1.55 }
+            position-y={ -.46}
+            position-x={ 3.3}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var lachgasSpan = document.querySelector(".lachgasdata");
+                lachgasSpan.classList.add("show");
                 dataSectie.classList.add("show");
             }}
         />

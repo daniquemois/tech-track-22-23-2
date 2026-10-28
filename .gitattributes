@@ -2,3 +2,6 @@
 * text=auto
 *.GLTFd filter=lfs diff=lfs merge=lfs -text
 *.GLTF filter=lfs diff=lfs merge=lfs -text
+
+# Ballon-model direct in git opslaan (LFS-backend is dood) — geen LFS/normalisatie
+public/models/balloon/scene.gltf -filter -diff -merge -text
