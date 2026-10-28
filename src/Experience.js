@@ -31,6 +31,10 @@ export default function Experience()
 
     const lachgas = useGLTF('./models/balloon/scene.gltf')
 
+    const coke = useGLTF('./models/coke.gltf')
+
+    const keta = useGLTF('./models/keta.gltf')
+
     const bord1 = useGLTF('./models/bord1.gltf')
 
     const bord2 = useGLTF('./models/bord2.gltf')
@@ -46,6 +50,8 @@ export default function Experience()
     const bord7 = useGLTF('./models/bord7.gltf')
 
     const bord8 = useGLTF('./models/bord8.gltf')
+
+    const bord9 = useGLTF('./models/9bord.gltf')
 
     return <>
 
@@ -154,6 +160,35 @@ export default function Experience()
                 var dataSectie = document.querySelector(".data");
                 var xtcSpan = document.querySelector(".xtcdata");
                 xtcSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
+        />
+
+        <primitive
+            object={ coke.scene }
+            scale={ .5 }
+            position-z={ .6 }
+            position-y={ .234}
+            position-x={ .45}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var cokeSpan = document.querySelector(".cokedata");
+                cokeSpan.classList.add("show");
+                dataSectie.classList.add("show");
+            }}
+        />
+
+        <primitive
+            object={ keta.scene }
+            scale={ .5 }
+            position-z={ .1 }
+            rotation-y={ 1 }
+            position-y={ .2335}
+            position-x={ -.25}
+            onClick={ () => {
+                var dataSectie = document.querySelector(".data");
+                var ketaSpan = document.querySelector(".ketadata");
+                ketaSpan.classList.add("show");
                 dataSectie.classList.add("show");
             }}
         />
@@ -306,6 +341,15 @@ export default function Experience()
             position-y={ .25}
             rotation-y={ -1.5 }
         /> 
+
+        <primitive
+            object={ bord9.scene }
+            scale={ .01 }
+            position-z={ 1.6 }
+            position-x={ .05}
+            position-y={ .25}
+            rotation-y={ -1.5 }
+        />
 
     </>
 }
