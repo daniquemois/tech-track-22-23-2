@@ -29,12 +29,6 @@ export default function Experience()
     
     const xtc = useGLTF('./models/pills/scene.gltf')
 
-    const lachgas = useGLTF('./models/balloon/scene.gltf')
-
-    const coke = useGLTF('./models/coke.gltf')
-
-    const keta = useGLTF('./models/keta.gltf')
-
     const bord1 = useGLTF('./models/bord1.gltf')
 
     const bord2 = useGLTF('./models/bord2.gltf')
@@ -51,8 +45,6 @@ export default function Experience()
 
     const bord8 = useGLTF('./models/bord8.gltf')
 
-    const bord9 = useGLTF('./models/9bord.gltf')
-    
     return <>
 
         <OrbitControls makeDefault />
@@ -165,35 +157,6 @@ export default function Experience()
         />
 
         <primitive
-            object={ coke.scene }
-            scale={ .5 }
-            position-z={ .6 }
-            position-y={ .234}
-            position-x={ .45}
-            onClick={ () => {
-                var dataSectie = document.querySelector(".data");
-                var cokeSpan = document.querySelector(".cokedata");
-                cokeSpan.classList.add("show");
-                dataSectie.classList.add("show");
-            }}
-        />
-
-        <primitive
-            object={ keta.scene }
-            scale={ .5 }
-            position-z={ .1 }
-            rotation-y={ 1 }
-            position-y={ .2335}
-            position-x={ -.25}
-            onClick={ () => {
-                var dataSectie = document.querySelector(".data");
-                var ketaSpan = document.querySelector(".ketadata");
-                ketaSpan.classList.add("show");
-                dataSectie.classList.add("show");
-            }}
-        />
-
-        <primitive
             object={ amfetamine.scene }
             scale={ .025 }
             position-z={ 1.3 }
@@ -236,20 +199,6 @@ export default function Experience()
                 var dataSectie = document.querySelector(".data");
                 var ghbSpan = document.querySelector(".ghbdata");
                 ghbSpan.classList.add("show");
-                dataSectie.classList.add("show");
-            }}
-        />
-
-        <primitive
-            object={ lachgas.scene }
-            scale={ .007 }
-            position-z={ 1.55 }
-            position-y={ -.46}
-            position-x={ 3.3}
-            onClick={ () => {
-                var dataSectie = document.querySelector(".data");
-                var lachgasSpan = document.querySelector(".lachgasdata");
-                lachgasSpan.classList.add("show");
                 dataSectie.classList.add("show");
             }}
         />
@@ -338,15 +287,6 @@ export default function Experience()
             scale={ .01 }
             position-z={ .7 }
             position-x={ -.05}
-            position-y={ .25}
-            rotation-y={ -1.5 }
-        /> 
-
-        <primitive
-            object={ bord9.scene }
-            scale={ .01 }
-            position-z={ 1.6 }
-            position-x={ .05}
             position-y={ .25}
             rotation-y={ -1.5 }
         /> 

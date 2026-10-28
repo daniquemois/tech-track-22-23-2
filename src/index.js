@@ -1,6 +1,8 @@
 import './style.css'
+import { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'
+import { Loader } from '@react-three/drei'
 import Experience from './Experience.js'
 import './gebruikers.js'
 import './uitgaanders.js'
@@ -11,17 +13,48 @@ import './ziekenhuis.js'
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
 root.render(
-    <Canvas
-        camera={ {
-            fov: 45,
-            near: 0.1,
-            far: 200,
-            position: [ - 4, 3, 6 ]
-        } }
-        onPointerMissed={ () => { console.log('You missed!') } }
-    >
-        <Experience />
-    </Canvas>
+    <>
+        <Canvas
+            camera={ {
+                fov: 45,
+                near: 0.1,
+                far: 200,
+                position: [ - 4, 3, 6 ]
+            } }
+            onPointerMissed={ () => { console.log('You missed!') } }
+        >
+            <Suspense fallback={ null }>
+                <Experience />
+            </Suspense>
+        </Canvas>
+
+        <Loader
+            containerStyles={ {
+                background: 'radial-gradient(circle at 50% 40%, #1c1111 0%, #0a0606 100%)'
+            } }
+            innerStyles={ {
+                width: '240px',
+                height: '6px',
+                background: '#3a2626',
+                borderRadius: '99px',
+                overflow: 'hidden'
+            } }
+            barStyles={ {
+                height: '6px',
+                background: '#F54E4F',
+                borderRadius: '99px'
+            } }
+            dataStyles={ {
+                marginTop: '16px',
+                color: '#f3e4e4',
+                fontFamily: 'monospace',
+                fontSize: '13px',
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase'
+            } }
+            dataInterpolation={ (p) => `De kelder laadt… ${p.toFixed(0)}%` }
+        />
+    </>
 )
 
 var wietKnop = document.querySelector(".wietdata button");
